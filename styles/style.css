@@ -35,6 +35,7 @@ section#login {
     top: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
+    transition: width 0.8s, height 0.8s;
 }
 
 section#login > div#imagem {
@@ -42,7 +43,6 @@ section#login > div#imagem {
     height: 200px;
     background: var(--lilas) url("../image/metal.jpg") no-repeat left bottom fixed;
     background-size: cover;
-    border-radius: 20px 20px 0px 0px;
 }
 
 section#login > div#formulario {
