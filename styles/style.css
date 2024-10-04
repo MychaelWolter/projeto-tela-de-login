@@ -9,6 +9,7 @@
 
 :root {
     --verde: #44a89d;
+    --verde-2: #309185;
     --lilas: #5f2c82;
 }
 
@@ -58,4 +59,41 @@ div#formulario > h1 {
 
 div#formulario > p {
     font-size: 0.8rem;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1rem;
+    width: 80%;
+    height: 35px;
+    margin: 15px auto;
+    background-color: var(--verde);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+}
+
+form > input[type=submit]:hover {
+    background-color: var(--verde-2);
+    cursor: pointer;
+}
+
+.botao {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    height: 35px;
+    background-color: var(--verde);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.botao:hover {
+    background-color: var(--verde-2);
+    cursor: pointer;
+    text-decoration: underline;
 }
