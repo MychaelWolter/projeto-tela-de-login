@@ -11,6 +11,7 @@
     --verde: #44a89d;
     --verde-2: #309185;
     --lilas: #5f2c82;
+    --cinza-claro: #f0f0f0;
 }
 
 body, html {
@@ -31,11 +32,11 @@ section#login {
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    overflow: hidden;
     transition: width 0.8s, height 0.8s;
     transition-timing-function: ease;
 }
@@ -59,6 +60,14 @@ div#formulario > h1 {
 
 div#formulario > p {
     font-size: 0.8rem;
+}
+
+input[type=password], input[type=email] {
+    width: 80%;
+}
+
+input:focus-within {
+    background-color: var(--cinza-claro);
 }
 
 form > input[type=submit] {
@@ -96,4 +105,8 @@ form > input[type=submit]:hover {
     background-color: var(--verde-2);
     cursor: pointer;
     text-decoration: underline;
+}
+
+span {
+    transform: translateY(5px);
 }

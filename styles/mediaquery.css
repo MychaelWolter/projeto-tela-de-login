@@ -6,7 +6,8 @@
     }
 
     section#login {
-        width: 80vw;   
+        width: 80vw; 
+        height: 300px;  
     }
 
     section#login > div#imagem {
@@ -24,6 +25,14 @@
     div#formulario > p {
         font-size: 1rem;
     }
+
+    form > input[type=submit] {
+        width: 45%;
+    }
+
+    .botao {
+        width: 45%;
+    }
 }
 
 @media (min-width:992px) {
@@ -33,6 +42,7 @@
 
     section#login {
         width: 950px;
+        height: 300px;
     }
 
     section#login > div#imagem {
@@ -49,5 +59,13 @@
     
     div#formulario > p {
         font-size: 1rem;
+    }
+    
+    form > input[type=submit] {
+        width: 45%;
+    }
+
+    .botao {
+        width: 45%;
     }
 }
